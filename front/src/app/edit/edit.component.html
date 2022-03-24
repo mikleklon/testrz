@@ -1,0 +1,17 @@
+<div *ngIf="isOpen()" style="position: absolute; width: 500px; height: 500px; margin: 10px; padding: 10px; border: 1px solid #000; background: #fff;top:0; left:0;">
+
+  <div>
+    Add/Edit:
+    <div>
+      Type:
+      <select id="type" name="type" [(ngModel)]="data().type">
+        <option *ngFor="let c of enumObj()" [ngValue]="c.k">{{c.v}}</option>
+      </select><br />
+      Date: <input type="datetime" id="start" name="start" [value]="toDate(data().start)" (change)="toStart($event)" /> <span *ngIf="data().type != 2">- <input type="datetime" [value]="toDate(data().end)" (change)="toEnd($event)" /></span><br />
+      Name: <input type="text" id="name" name="name" [(ngModel)]="data().name" /><br />
+      <span *ngIf="data().type == 0">Place:  <input type="text" id="place" name="place" [(ngModel)]="data().place" /></span><br />
+        All:  <input type="checkbox" id="all" name="all" [(ngModel)]="all" /><br />
+        <button (click)="save()">Save</button><button (click)="cancel()">Cancel</button>
+    </div>
+  </div>
+</div>

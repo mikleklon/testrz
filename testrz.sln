@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "api", "api\api.njsproj", "{6734DBFB-3939-4B94-8209-BFAE56A88FEA}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "front", "front\front.njsproj", "{75085C53-1190-4E8D-BA7A-6CE2DFB19170}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6734DBFB-3939-4B94-8209-BFAE56A88FEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6734DBFB-3939-4B94-8209-BFAE56A88FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6734DBFB-3939-4B94-8209-BFAE56A88FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6734DBFB-3939-4B94-8209-BFAE56A88FEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75085C53-1190-4E8D-BA7A-6CE2DFB19170}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75085C53-1190-4E8D-BA7A-6CE2DFB19170}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75085C53-1190-4E8D-BA7A-6CE2DFB19170}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75085C53-1190-4E8D-BA7A-6CE2DFB19170}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3625033-F434-430E-BBE4-12102E0F87D4}
+	EndGlobalSection
+EndGlobal

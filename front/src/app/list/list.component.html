@@ -1,0 +1,18 @@
+<div>
+
+</div>
+<div>
+  <div *ngFor="let note of notes" style="border:1px solid #ff6600; margin:10px;padding: 10px;">
+    <span *ngIf="!!toDate(note.start)">Date: {{toDate(note.start)}}<span *ngIf="!!toDate(note.end)"> - {{toDate(note.end)}}</span><br /></span>
+    <span *ngIf="!!note.name">Name: {{note.name}}<br /></span>
+    <span *ngIf="!!note.place">Place: {{note.place}}<br /></span>
+    <span *ngIf="!!toType(note.type)">Type: {{toType(note.type)}}</span>
+    <div *ngIf="isAuth()" style="text-align:right;">
+      <span (click)="edit(note)">Edit</span>&nbsp;<span (click)="delete(note)">Delete</span>
+    </div>
+  </div>
+</div>
+<div *ngIf="isAuth()">
+  <button (click)="createNote()">Create</button>
+</div>
+<app-edit></app-edit>

@@ -1,0 +1,10 @@
+<div *ngIf="!isAuth()">
+  login: <input type="text" id="login" name="login" [(ngModel)] ="login"/><br/>
+  Password: <input type="text" id="password" name="password"[(ngModel)]="password"/>
+  <button (click)="logIn()">Login</button>
+  <app-reg></app-reg>
+</div>
+<div *ngIf="isAuth()">
+  name: {{userName()}} <button (click)="logOut()">Logout</button>
+</div>
+

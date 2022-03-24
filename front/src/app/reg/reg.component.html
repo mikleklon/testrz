@@ -1,0 +1,16 @@
+<div style="border: 1px solid #999; width: 300px; padding: 2px;">
+
+  <div *ngIf="!open" (click)="openReg(true)">
+    Registr +
+  </div>
+  <div *ngIf="open" (click)="openReg(false)">
+    registr -
+  </div>
+  <div *ngIf="open" style="border: 1px solid #000;">
+    login: <input type="text" id="login" name="login" [(ngModel)]="login" /><br />
+    Password: <input type="text" id="password" name="password" [(ngModel)]="password" /><br />
+    Name: <input type="name" id="name" name="name" [(ngModel)]="name" /><br />
+    <button (click)="registr()">Registr</button>
+  </div>
+
+</div>
